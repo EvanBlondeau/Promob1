@@ -1,0 +1,74 @@
+{
+    "Questions": [
+            { "question":"Quel est la capital de la france ?" ,
+                             "reponse_1":"berlin", 
+                             "reponse_2":"paris",
+                             "reponse_3":"mulhouse", 
+                             "reponse_4":"baguer",
+                             "bonne_rep":"paris"}, 
+
+            { "question":"Comment appelle t-on le personnage principal de la série Breaking Bad ?" ,
+                             "reponse_1":"heisenberg",
+                             "reponse_2":"jean-mi",
+                             "reponse_3":"john snow",
+                             "reponse_4":"superman",
+                             "bonne_rep":"heisenberg" }, 
+
+            { "question":"24 + 85 * 2 / 10 -4 = ?" , 
+                             "reponse_1":"42",
+                             "reponse_2":"15.4",
+                             "reponse_3":"17.8",
+                             "reponse_4":"37",
+                             "bonne_rep":"37" },
+
+ 	        { "question":"Quel est mon nom ? " , 
+                             "reponse_1":"ta mere",
+                             "reponse_2":"dede",
+                             "reponse_3":"Evan = dieu",
+                             "reponse_4":"la reponse D",
+                             "bonne_rep":"Evan = dieu" },
+
+	        { "question":"Qu'est-ce que le anaconda dribble ? " , 
+                             "reponse_1":"un serpent qui joue au foot",
+                             "reponse_2":"une technique de moine shaoling ",
+                             "reponse_3":"une insulte de coincoin envers la chine",
+                             "reponse_4":"une technique de magicien",
+                             "bonne_rep":"une technique de magicien" },
+        
+            { "question":"Quel est la couleur du cheval blanc d'henry IV ? " , 
+                             "reponse_1":"arc en ciel ",
+                             "reponse_2":"noir ",
+                             "reponse_3":"blanc",
+                             "reponse_4":"henry IV",
+                             "bonne_rep":"blanc" },
+
+            { "question":"Quel est le meilleur joueur du monde (de football bien sûr) ? " , 
+                             "reponse_1":"moi",
+                             "reponse_2":"messi",
+                             "reponse_3":"c.ronaldo",
+                             "reponse_4":"pelé",
+                             "bonne_rep":"messi" },
+
+            { "question":"tu as quel age ? " , 
+                             "reponse_1":"l'age de ta mere au meme age",
+                             "reponse_2":"21 ans",
+                             "reponse_3":"et ta soeur",
+                             "reponse_4":"wtf c'est quoi cette question",
+                             "bonne_rep":"21 ans" },
+
+            { "question":"D'ou vient le reblochon ?" , 
+                             "reponse_1":"Bretagne",
+                             "reponse_2":"Normandie",
+                             "reponse_3":"Savoie",
+                             "reponse_4":"Auvergne",
+                             "bonne_rep":"Savoie" },
+
+            { "question":"Combien les romains disposait-il de dieu?  " , 
+                             "reponse_1":"On sait pas mais plus que 1",
+                             "reponse_2":"5",
+                             "reponse_3":"8",
+                             "reponse_4":"3",
+                             "bonne_rep":"On sait pas mais plus que 1" }
+
+        ]
+    }
