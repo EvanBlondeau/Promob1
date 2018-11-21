@@ -1,74 +1,128 @@
 {
-    "Questions": [
-            { "question":"Quel est la capital de la france ?" ,
-                             "reponse_1":"berlin", 
-                             "reponse_2":"paris",
-                             "reponse_3":"mulhouse", 
-                             "reponse_4":"baguer",
-                             "bonne_rep":"paris"}, 
+    "Histoire": [
 
-            { "question":"Comment appelle t-on le personnage principal de la série Breaking Bad ?" ,
-                             "reponse_1":"heisenberg",
-                             "reponse_2":"jean-mi",
-                             "reponse_3":"john snow",
-                             "reponse_4":"superman",
-                             "bonne_rep":"heisenberg" }, 
+		{ "question":"En quelle année a eu lieu le grand incendie de Londres ?",
+			"reponse_1":"1593",
+			"reponse_2":"1666",
+			"reponse_3":"1781",
+			"reponse_4":"1905",
+			"bonne_rep":"1666" },	
+			
+		{ "question":"En quelle année a eu lieu la bataille de Waterloo ?",
+			"reponse_1":"1750",
+			"reponse_2":"1769",
+			"reponse_3":"1781",
+			"reponse_4":"1815",
+			"bonne_rep":"" },			
 
-            { "question":"24 + 85 * 2 / 10 -4 = ?" , 
-                             "reponse_1":"42",
-                             "reponse_2":"15.4",
-                             "reponse_3":"17.8",
-                             "reponse_4":"37",
-                             "bonne_rep":"37" },
+		{ "question":"Quel président américain était en poste lors de l'abolition de l'esclavage aux USA ?",
+			"reponse_1":"George Washington",
+			"reponse_2":"Thomas Jefferson",
+			"reponse_3":"Abraham Lincoln",
+			"reponse_4":"Theodore Roosevelt",
+			"bonne_rep":"Abraham Lincoln" },	
+			
+    ]
+		
+	"Géographie" : [
+		
+		{ "question":"De quel pays Ashgabat est-elle la capitale ?",
+			"reponse_1":"Ouzbekistan",
+			"reponse_2":"Kazakhstan",
+			"reponse_3":"Turkménistan",
+			"reponse_4":"Tadjikistan",
+			"bonne_rep":"Turkménistan" },
+						
+		{ "question":"Quel pays ne fait pas partie de l'ALENA ?",
+			"reponse_1":"États-Unis",
+			"reponse_2":"Canada",
+			"reponse_3":"Venezuela",
+			"reponse_4":"Mexique",
+			"bonne_rep":"Venezuela" },
 
- 	        { "question":"Quel est mon nom ? " , 
-                             "reponse_1":"ta mere",
-                             "reponse_2":"dede",
-                             "reponse_3":"Evan = dieu",
-                             "reponse_4":"la reponse D",
-                             "bonne_rep":"Evan = dieu" },
+		{ "question":"Comment se nomme la dépendance française en Antarctique ?",
+			"reponse_1":"Terre Marie Byrd",
+			"reponse_2":"Terre-Adélie",
+			"reponse_3":"Terre de la Reine-Maud",
+			"reponse_4":"Terre-Neuve",
+			"bonne_rep":"" },
+			
+		{ "question":"À qui appartient le Groenland ?",
+			"reponse_1":"Le Canada",
+			"reponse_2":"L'Islande",
+			"reponse_3":"La Suède",
+			"reponse_4":"Le Danmark",
+			"bonne_rep":"Le Danmark" },		
+						
+	]
+	
+	"Art et Littérature" : []
+	
+	"Sports et Loisirs" : [
+	
+		{ "question":"Combien de titres du Grand Chelem Roger Federer a-t-il remporté ?",
+			"reponse_1":"10",
+			"reponse_2":"15",
+			"reponse_3":"18",
+			"reponse_4":"20",
+			"bonne_rep":"20" },
+			
+		{ "question":"Lequel de ces clubs de football a le plus de fois remporté la Ligue des Champions ?",
+			"reponse_1":"Real Madrid",
+			"reponse_2":"Bayern Munich",
+			"reponse_3":"AC Milan",
+			"reponse_4":"FC Barcelone",
+			"bonne_rep":"Real Madrid" },
+	
+	]
+	
+	"Divertissement" : [
+	
+		{ "question":"Comment appelle t-on le personnage principal de la série Breaking Bad ?" ,
+						 "reponse_1":"Heisenberg",
+						 "reponse_2":"Sacha",
+						 "reponse_3":"John Snow",
+						 "reponse_4":"Superman",
+						 "bonne_rep":"Heisenberg" }, 
 
-	        { "question":"Qu'est-ce que le anaconda dribble ? " , 
-                             "reponse_1":"un serpent qui joue au foot",
-                             "reponse_2":"une technique de moine shaoling ",
-                             "reponse_3":"une insulte de coincoin envers la chine",
-                             "reponse_4":"une technique de magicien",
-                             "bonne_rep":"une technique de magicien" },
-        
-            { "question":"Quel est la couleur du cheval blanc d'henry IV ? " , 
-                             "reponse_1":"arc en ciel ",
-                             "reponse_2":"noir ",
-                             "reponse_3":"blanc",
-                             "reponse_4":"henry IV",
-                             "bonne_rep":"blanc" },
-
-            { "question":"Quel est le meilleur joueur du monde (de football bien sûr) ? " , 
-                             "reponse_1":"moi",
-                             "reponse_2":"messi",
-                             "reponse_3":"c.ronaldo",
-                             "reponse_4":"pelé",
-                             "bonne_rep":"messi" },
-
-            { "question":"tu as quel age ? " , 
-                             "reponse_1":"l'age de ta mere au meme age",
-                             "reponse_2":"21 ans",
-                             "reponse_3":"et ta soeur",
-                             "reponse_4":"wtf c'est quoi cette question",
-                             "bonne_rep":"21 ans" },
-
-            { "question":"D'ou vient le reblochon ?" , 
-                             "reponse_1":"Bretagne",
-                             "reponse_2":"Normandie",
-                             "reponse_3":"Savoie",
-                             "reponse_4":"Auvergne",
-                             "bonne_rep":"Savoie" },
-
-            { "question":"Combien les romains disposait-il de dieu?  " , 
-                             "reponse_1":"On sait pas mais plus que 1",
-                             "reponse_2":"5",
-                             "reponse_3":"8",
-                             "reponse_4":"3",
-                             "bonne_rep":"On sait pas mais plus que 1" }
-
-        ]
-    }
+		{ "question":"Comment s'appelle le dernier opus de The Legend of Zelda ?" ,
+						 "reponse_1":"Heisenberg",
+						 "reponse_2":"Sacha",
+						 "reponse_3":"Breath",
+						 "reponse_4":"Superman",
+						 "bonne_rep":"Heisenberg" }, 							 
+	
+	]
+	
+	"Mathématiques & Calcul Mental" : [
+	
+		{ "question":"24 + 85 * 2 / 10 - 4 = ?" , 
+						 "reponse_1":"42",
+						 "reponse_2":"15.4",
+						 "reponse_3":"17.8",
+						 "reponse_4":"37",
+						 "bonne_rep":"37" },	
+	
+	]
+	
+	"Sciences, Nature & Technologies" : []
+	
+	"Traditions et Patrimoine" : [
+	
+		{ "question":"D'où vient le reblochon ?" , 
+						 "reponse_1":"Bretagne",
+						 "reponse_2":"Normandie",
+						 "reponse_3":"Savoie",
+						 "reponse_4":"Auvergne",
+						 "bonne_rep":"Savoie" },	
+						 
+		{ "question":"En France, qui choisit l'apparence des timbres dits 'Marianne'?" , 
+						 "reponse_1":"Le directeur de La Poste",
+						 "reponse_2":"Le maire de Paris",
+						 "reponse_3":"Le peuple français (sur sondage)",
+						 "reponse_4":"Le Président de la République",
+						 "bonne_rep":"Savoie" },	
+	
+	]
+	
+}
