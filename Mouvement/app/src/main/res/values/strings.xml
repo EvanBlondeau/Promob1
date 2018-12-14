@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Mouvement</string>
+    <string name="Label">Le signal à recopier est : </string>
+</resources>
