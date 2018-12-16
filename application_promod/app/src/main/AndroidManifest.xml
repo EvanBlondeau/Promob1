@@ -20,6 +20,7 @@
     <uses-feature android:name="android.hardware.sensor.light" android:required="true" />
     <uses-feature android:name="android.hardware.sensor.proximity" android:required="true" />
     <uses-feature android:name="android.hardware.sensor.magnetometer" android:required="true" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/tigre"
@@ -70,11 +71,11 @@
             android:screenOrientation="portrait">
         </activity>
         <activity android:name=".Morpion"
-            android:label="morpion"
+            android:label="Morpion"
             android:screenOrientation="portrait">
         </activity>
         <activity android:name=".Morse"
-            android:label="morse"
+            android:label="Morse"
             android:screenOrientation="portrait">
         </activity>
 

@@ -232,19 +232,19 @@ public class Morse extends AppCompatActivity implements GestureDetector.OnGestur
         TextView com_score = findViewById(R.id.textView_com_score);
         if(essai.compareTo(modele)==1)
         {
-            com_score.setText("tu ne sais pas recopier?");
+            com_score.setText("Tu ne sais pas recopier ?");
             playSound(R.raw.lose);
         }
         else if (score_time > 30) {
-            com_score.setText("tu es pas très doué");
+            com_score.setText("Tu n'es pas très doué");
             playSound(R.raw.lose);
         } else if(score_time<30 && score_time >15)
         {
-            com_score.setText("tu te débrouille bien ");
+            com_score.setText("Tu te débrouilles bien");
             playSound(R.raw.appl5);
         }else if(score_time<15)
         {
-            com_score.setText("tu est un monstre");
+            com_score.setText("Tu es un monstre !");
             playSound(R.raw.appla10);
         }
 

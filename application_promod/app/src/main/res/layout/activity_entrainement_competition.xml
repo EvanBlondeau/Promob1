@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@mipmap/sky">
 
     <RelativeLayout
         android:layout_width="0dp"
@@ -24,7 +25,9 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="224dp"
-            android:text="@string/but_comp" />
+            android:text="@string/but_comp"
+            android:background="@drawable/roundbutton"
+            android:textColor="#FFFFFF"/>
 
         <Button
             android:id="@+id/button_entrain"
@@ -33,22 +36,24 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="175dp"
-            android:text="@string/but_entr" />
+            android:text="@string/but_entr"
+            android:background="@drawable/roundbutton"
+            android:textColor="#FFFFFF"/>
 
         <TextView
             android:id="@+id/textView9"
-            android:layout_width="285dp"
-            android:layout_height="75dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="101dp"
-            android:layout_marginEnd="49dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="92dp"
+            android:layout_marginEnd="19dp"
             android:accessibilityHeading="false"
-            android:background="@color/colorPrimaryDark"
             android:text="@string/tex_comp"
             android:textAlignment="center"
+            android:textColor="#FFFFFF"
             android:textSize="24sp"
             android:textStyle="bold" />
     </RelativeLayout>

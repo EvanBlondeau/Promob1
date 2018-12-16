@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@mipmap/sky"
     tools:context=".MainActivity">
 
     <RelativeLayout
@@ -27,7 +28,7 @@
             android:text="@string/Text_view_1"
             android:textAlignment="center"
             android:textAllCaps="false"
-            android:textColor="@android:color/holo_red_dark"
+            android:textColor="#FFFFFF"
             android:textSize="30sp"
             android:textStyle="bold"
             tools:layout_editor_absoluteX="119dp"
@@ -42,8 +43,10 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="336dp"
             android:text="@string/button_text3"
+            android:background="@drawable/roundbutton"
+            android:textColor="#FFFFFF"
             tools:layout_editor_absoluteX="128dp"
-            tools:layout_editor_absoluteY="362dp" />
+            tools:layout_editor_absoluteY="362dp"/>
 
         <Button
             android:id="@+id/button_2"
@@ -53,6 +56,8 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="237dp"
             android:text="@string/button_text2"
+            android:background="@drawable/roundbutton"
+            android:textColor="#FFFFFF"
             tools:layout_editor_absoluteX="117dp"
             tools:layout_editor_absoluteY="295dp" />
 
@@ -64,6 +69,8 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="140dp"
             android:text="@string/button_text1"
+            android:background="@drawable/roundbutton"
+            android:textColor="#FFFFFF"
             tools:layout_editor_absoluteX="146dp"
             tools:layout_editor_absoluteY="227dp" />
     </RelativeLayout>

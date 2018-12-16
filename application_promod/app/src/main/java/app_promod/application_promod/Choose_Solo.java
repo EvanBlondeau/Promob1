@@ -46,7 +46,7 @@ public class Choose_Solo extends AppCompatActivity {
 
                 button_morpion.setOnClickListener(new View.OnClickListener() {
                     public void onClick(View v) {
-                        Intent intent = new Intent(Choose_Solo.this, Touch_game.class);
+                        Intent intent = new Intent(Choose_Solo.this, Morpion.class);
                         intent.putExtra("key",EXTRA_MESSAGE);
                         startActivity(intent);
                     }
