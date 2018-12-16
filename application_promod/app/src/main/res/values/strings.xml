@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">best application ever!!!</string>
+    <string name="button_text1">SinglePlayer</string>
+    <string name="button_text2">Multijoueur</string>
+    <string name="button_text3">Parametre</string>
+
+    <string name="Text_view_1">Best App Ever</string>
+
+    <string name="button_choix1">Questions / réponses de la mort </string>
+    <string name="button_choix2">100 portes de la mort </string>
+    <string name="button_choix3">Morpion de la mort</string>
+    <string name="button_choix4">Morse de la mort</string>
+
+    <string name="Text_view_cx">Choisissez le thème des questions</string>
+    <string name="but_cx1">Aléatoire</string>
+    <string name="but_cx2">Sport</string>
+    <string name="but_cx3">Film</string>
+    <string name="but_cx4">Jeux vidéo</string>
+    <string name="but_cx5">Histoire</string>
+    <string name="but_cx6">Technologie</string>
+
+    <string name="Text_view_2">Question</string>
+    <string name="button1" >reponse A</string>
+    <string name="button2" >reponse B</string>
+    <string name="button3" >réponse C</string>
+    <string name="button4" >réponse D</string>
+    <string name="button_commencer_quest" >cliquer pour commencer</string>
+    <string name="button_pro_quest" >Prochaine question</string>
+
+    <string name="button_init_move" >Initialisation du mouvement</string>
+    <string name="button_param" >paramètre capteur</string>
+
+    <string name="but_menu_prin" >Menu principal</string>
+    <string name="score" >Vous avez un score de</string>
+    <string name="com_score" >c est </string>
+    <string name="nombre" >nombre</string>
+
+
+    <string name="connect" >connexion a un hôte</string>
+    <string name="create" >crée un nouvel hôte</string>
+
+    <string name="tex_comp" >Selectionnez votre mode de jeu</string>
+    <string name="but_entr" >entrainement</string>
+    <string name="but_comp" >compétition</string>
+
+    <string name="Label">Le signal à recopier est : </string>
+
+
+</resources>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/Textview_quest"
+            android:layout_width="match_parent"
+            android:layout_height="148dp"
+            android:background="@android:color/darker_gray"
+            android:clickable="false"
+            android:elegantTextHeight="false"
+            android:fadeScrollbars="true"
+            android:gravity="center"
+            android:hint="@string/Text_view_2"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            android:text="@string/Text_view_2"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textIsSelectable="false"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            android:verticalScrollbarPosition="right"
+            android:visibility="visible"
+            tools:targetApi="o" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <ProgressBar
+            android:id="@+id/barre_prog"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_margin="10dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/but_rep_A"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="152dp"
+                android:layout_height="93dp"
+                android:text="@string/button1"
+                tools:layout_editor_absoluteY="278dp" />
+
+            <Button
+                android:id="@+id/but_rep_B"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="152dp"
+                android:layout_height="93dp"
+                android:backgroundTintMode="src_in"
+                android:text="@string/button2"
+                tools:layout_editor_absoluteX="204dp"
+                tools:layout_editor_absoluteY="278dp" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/but_rep_C"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="152dp"
+                android:layout_height="93dp"
+                android:text="@string/button3"
+                tools:layout_editor_absoluteX="33dp"
+                tools:layout_editor_absoluteY="385dp" />
+
+            <Button
+                android:id="@+id/but_rep_D"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="152dp"
+                android:layout_height="93dp"
+                android:text="@string/button4"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="204dp"
+                tools:layout_editor_absoluteY="385dp" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/button_qpro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:accessibilityHeading="true"
+            android:clickable="false"
+            android:enabled="true"
+            android:text="@string/button_commencer_quest" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
