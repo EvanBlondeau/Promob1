@@ -61,7 +61,7 @@
 		                	 "reponse_2":"1769",
 		                     "reponse_3":"1781",
 			                 "reponse_4":"1815",
-			                 "bonne_rep":"" },			
+			                 "bonne_rep":"1815" },
 
 	    	{ "question":"Quel président américain était en poste lors de l'abolition de l'esclavage aux USA ?",
 			                 "reponse_1":"George Washington",
@@ -89,14 +89,14 @@
                              "reponse_2":"Terre-Adélie",
                              "reponse_3":"Terre de la Reine-Maud",
                              "reponse_4":"Terre-Neuve",
-                             "bonne_rep":"" },
+                             "bonne_rep":"Terre-Adélie" },
                                 
             { "question":"À qui appartient le Groenland ?",
                              "reponse_1":"Le Canada",
                              "reponse_2":"L'Islande",
                              "reponse_3":"La Suède",
-                             "reponse_4":"Le Danmark",
-                             "bonne_rep":"Le Danmark" }, 
+                             "reponse_4":"Le Danemark",
+                             "bonne_rep":"Le Danemark" },
 
             { "question":"Combien de titres du Grand Chelem Roger Federer a-t-il remporté ?",
                              "reponse_1":"10",
