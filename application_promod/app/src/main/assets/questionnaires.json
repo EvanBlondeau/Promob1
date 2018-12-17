@@ -113,11 +113,11 @@
                              "bonne_rep":"Real Madrid" },
        
             { "question":"Comment s'appelle le dernier opus de The Legend of Zelda ?" ,
-                             "reponse_1":"Heisenberg",
-                             "reponse_2":"Sacha",
-                             "reponse_3":"Breath",
-                             "reponse_4":"Superman",
-                             "bonne_rep":"Heisenberg" }, 
+                             "reponse_1":"Twilight Princess",
+                             "reponse_2":"The Minish Cap",
+                             "reponse_3":"Breath of the Wild",
+                             "reponse_4":"Ocarina of Time",
+                             "bonne_rep":"Breath of the Wild" },
 
             { "question":"Combien les romains disposait-il de dieu?  " , 
                              "reponse_1":"On sait pas mais plus que 1",

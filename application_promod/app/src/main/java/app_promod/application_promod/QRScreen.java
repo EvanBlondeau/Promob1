@@ -170,7 +170,7 @@ public class QRScreen extends AppCompatActivity {
                         progress=0;
                         mProgressBar = findViewById(R.id.barre_prog);
                         mProgressBar.setProgress(0);
-
+                        mProgressBar.setProgressTintList( ColorStateList.valueOf(Color.RED));
 
                         //*range + 1
                         int i;

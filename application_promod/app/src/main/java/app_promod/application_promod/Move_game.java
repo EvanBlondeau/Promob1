@@ -93,7 +93,7 @@ public class Move_game extends AppCompatActivity implements
                 image.setImageResource(R.mipmap.noir);//jeu_lumiere
                 break;
             case 2 :
-                image.setImageResource(R.mipmap.test);
+                image.setImageResource(R.drawable.sambox);
                 break;
 
         }
@@ -330,7 +330,7 @@ public class Move_game extends AppCompatActivity implements
 
             playSound(R.raw.gameboy);
             mProgressBar.setProgress(100);
-            image.setImageResource(R.drawable.archdebd2);
+            image.setImageResource(R.drawable.samfin);
             mProgressBar.setProgressTintList( ColorStateList.valueOf(Color.GREEN));
             timer_end = new Date().getTime();
             //timer de 1s pour voir la porte ouverte
@@ -659,13 +659,12 @@ public class Move_game extends AppCompatActivity implements
 
     @Override
     public boolean onSingleTapConfirmed(MotionEvent e) {
-        System.out.println("# onSimpleTap: ");
         if(enigme_courante==2 && niveau_dans_lenigme==1)
         {
             niveau_dans_lenigme=2;
             mProgressBar.setProgress(40);
             playSound(R.raw.gameboy);
-            image.setImageResource(R.drawable.archdebd);
+            image.setImageResource(R.drawable.sammil);
 
         }
         return true;
@@ -673,13 +672,13 @@ public class Move_game extends AppCompatActivity implements
 
     @Override
     public boolean onDoubleTap(MotionEvent e) {
-        System.out.println("# onDoubleTap: ");
+
         if(enigme_courante==2 && niveau_dans_lenigme==0)
         {
             niveau_dans_lenigme=1;
             mProgressBar.setProgress(25);
             playSound(R.raw.gameboy);
-            image.setImageResource(R.drawable.archdebd);
+            image.setImageResource(R.drawable.sammil);
             mProgressBar.setProgressTintList( ColorStateList.valueOf(Color.RED));
         }
 
@@ -688,7 +687,6 @@ public class Move_game extends AppCompatActivity implements
 
     @Override
     public boolean onDoubleTapEvent(MotionEvent e) {
-        System.out.println("# onDoubleTapEvent: ");
         return false;
     }
 

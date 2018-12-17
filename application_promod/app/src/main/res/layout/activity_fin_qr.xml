@@ -3,15 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@mipmap/sky">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <ImageView
             android:id="@+id/imageView"
@@ -29,22 +32,22 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/imageView"
             android:layout_alignStart="@+id/but_suivant"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="-31dp"
-            android:layout_marginTop="47dp"
-            android:layout_marginBottom="234dp"
+            android:layout_marginStart="-34dp"
+            android:layout_marginTop="46dp"
             android:text="@string/score"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/textView_score"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="185dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="310dp"
             android:text="@string/nombre"
             android:textAlignment="center"
+            android:textColor="#FFFFFF"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -52,20 +55,25 @@
             android:id="@+id/textView_com_score"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
+            android:layout_marginTop="360dp"
             android:layout_marginEnd="0dp"
-            android:layout_marginBottom="140dp"
             android:text="@string/com_score"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/but_suivant"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="58dp"
-            android:text="@string/but_menu_prin" />
+            android:layout_alignStart="@+id/imageView"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="-14dp"
+            android:layout_marginTop="411dp"
+            android:background="@drawable/roundbutton"
+            android:text="@string/but_menu_prin"
+            android:textColor="#FFFFFF" />
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
