@@ -67,7 +67,7 @@ public class Morse extends AppCompatActivity implements GestureDetector.OnGestur
         // Génération de la chaîne de caractères aléatoire
         TextView Label = findViewById(R.id.Label);
 
-        int mot_courant = (int) ((Math.random() * 3));
+        int mot_courant = (int) ((Math.random() * 5));
         System.out.println(mot_courant);
 
         modele = (String)motMorse.get(mot_courant);
@@ -127,6 +127,7 @@ public class Morse extends AppCompatActivity implements GestureDetector.OnGestur
         TextView mText = findViewById(R.id.textView);
         TextView mText2 = findViewById(R.id.textView2);
         if (countTocuh<10) {
+            playSound(R.raw.morselong);
             mText.append((CharSequence) "_");
             essai+='_';
             countTocuh++;
@@ -174,6 +175,7 @@ public class Morse extends AppCompatActivity implements GestureDetector.OnGestur
         //mText2.setText((CharSequence) Float.toString(event.getX()));
         //mText3.setText((CharSequence) Float.toString(event.getY()));
         if (countTocuh<10) {
+            playSound(R.raw.morsecourt);
             mText.append((CharSequence) ".");
             essai+='.';
             countTocuh++;
@@ -232,19 +234,19 @@ public class Morse extends AppCompatActivity implements GestureDetector.OnGestur
         TextView com_score = findViewById(R.id.textView_com_score);
         if(essai.compareTo(modele)==1)
         {
-            com_score.setText("Tu ne sais pas recopier ?");
+            com_score.setText("tu ne sais pas recopier?");
             playSound(R.raw.lose);
         }
         else if (score_time > 30) {
-            com_score.setText("Tu n'es pas très doué");
+            com_score.setText("tu es pas très doué");
             playSound(R.raw.lose);
         } else if(score_time<30 && score_time >15)
         {
-            com_score.setText("Tu te débrouilles bien");
+            com_score.setText("tu te débrouille bien ");
             playSound(R.raw.appl5);
         }else if(score_time<15)
         {
-            com_score.setText("Tu es un monstre !");
+            com_score.setText("tu est un monstre");
             playSound(R.raw.appla10);
         }
 
@@ -264,7 +266,7 @@ public class Morse extends AppCompatActivity implements GestureDetector.OnGestur
         }else if(param1.compareTo("competition") == 0)
         {
             Button button_suivant = findViewById(R.id.but_suivant);
-            button_suivant.setText("Jeu suivant");
+            button_suivant.setText("Résultat des scores");
 
             button_suivant.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
