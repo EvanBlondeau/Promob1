@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
         button_1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Test_question.class);
+                Intent intent = new Intent(MainActivity.this, Credits.class);
                 startActivity(intent);
 
             }
