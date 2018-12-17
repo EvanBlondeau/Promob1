@@ -10,8 +10,11 @@ import android.hardware.SensorManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v4.view.GestureDetectorCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -24,13 +27,14 @@ import java.util.Date;
 
 import java.util.List;
 
-public class Move_game extends AppCompatActivity implements SensorEventListener {
+public class Move_game extends AppCompatActivity implements
+        SensorEventListener, GestureDetector.OnGestureListener,GestureDetector.OnDoubleTapListener {
     private SensorManager sensorManager_param;
 
     SensorManager sensorManager;
     private ProgressBar mProgressBar;
     ImageView image;
-
+    private GestureDetectorCompat mDetector;
     float light_numb;
 
     public double timer_start,timer_end,timer_gagne,timer_gagne2;
@@ -57,7 +61,7 @@ public class Move_game extends AppCompatActivity implements SensorEventListener 
     float[] magneticVector=new float[3];
     float[] resultMatrix=new float[9];
     float[] values=new float[3];
-    int nb_enigme_possible=2;
+    int nb_enigme_possible=3;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -94,7 +98,10 @@ public class Move_game extends AppCompatActivity implements SensorEventListener 
 
         }
 
-
+        mDetector = new GestureDetectorCompat(this,this);
+        // Set the gesture detector as the double tap
+        // listener.
+        mDetector.setOnDoubleTapListener(this);
 
      /* button_par.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -190,9 +197,9 @@ public class Move_game extends AppCompatActivity implements SensorEventListener 
         y= Float.valueOf(df.format(y_2));
         z= Float.valueOf(df.format(z_2));
 
-        System.out.println("x : "+x);
+      /*  System.out.println("x : "+x);
         System.out.println("y : "+y);
-        System.out.println("z : "+z);
+        System.out.println("z : "+z);*/
 
        /*if(enigme_courante==2 && (x==(float)0)&&(z==(float)0))
         {
@@ -223,6 +230,7 @@ public class Move_game extends AppCompatActivity implements SensorEventListener 
             niveau_dans_lenigme = 1;
 
             mProgressBar.setProgress(25);
+            mProgressBar.setProgressTintList( ColorStateList.valueOf(Color.RED));
             playSound(R.raw.gameboy);
 
         }
@@ -261,7 +269,7 @@ public class Move_game extends AppCompatActivity implements SensorEventListener 
             playSound(R.raw.gameboy);
             niveau_dans_lenigme = 4;
             mProgressBar.setProgress(100);
-            image.setImageResource(R.drawable.archdebd);
+            image.setImageResource(R.drawable.archdebd2);
             mProgressBar.setProgressTintList( ColorStateList.valueOf(Color.GREEN));
             timer_end = new Date().getTime();
             //timer de 1s pour voir la porte ouverte
@@ -279,6 +287,66 @@ public class Move_game extends AppCompatActivity implements SensorEventListener 
             //lancement de la nouvelle activité
         }
 
+
+
+
+
+        //jeu box
+
+        if(enigme_courante==2 && niveau_dans_lenigme==2 &&((y>(float)-10) &&(y<(float)10) )&&(z<(float)10&&(z>-10))  )
+        {
+            System.out.println("pas mal ;)");
+
+            //musique courte pour lui dire qu'il avance ;)
+
+            niveau_dans_lenigme = 3;
+
+            mProgressBar.setProgress(60);
+            mProgressBar.setProgressTintList( ColorStateList.valueOf(Color.RED));
+            playSound(R.raw.gameboy);
+
+        }
+        if(enigme_courante==2 && niveau_dans_lenigme==3 &&((y>(float)-5) &&(y<(float)5) )&&(z<(float)-85&&(z>-95))  )
+        {
+            System.out.println("pas mal ;)");
+
+            //musique courte pour lui dire qu'il avance ;)
+
+            niveau_dans_lenigme = 4;
+
+            mProgressBar.setProgress(80);
+            mProgressBar.setProgressTintList( ColorStateList.valueOf(Color.RED));
+            playSound(R.raw.gameboy);
+
+        }
+
+        if(enigme_courante==2 && niveau_dans_lenigme==4 &&((y>(float)-10) &&(y<(float)10) )&&(z<(float)-170&&(z>-185))  )
+        {
+            System.out.println("pas mal ;)");
+
+            //musique courte pour lui dire qu'il avance ;)
+
+            niveau_dans_lenigme = 5;
+
+            playSound(R.raw.gameboy);
+            mProgressBar.setProgress(100);
+            image.setImageResource(R.drawable.archdebd2);
+            mProgressBar.setProgressTintList( ColorStateList.valueOf(Color.GREEN));
+            timer_end = new Date().getTime();
+            //timer de 1s pour voir la porte ouverte
+            final Handler handler = new Handler();
+            handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    // Do something after 5s = 5000ms
+                    if(bonne_reponse == 1)
+                    {
+                        end_move();
+                    }
+                }
+            }, 5000);
+
+        }
 
 
 
@@ -380,7 +448,7 @@ public class Move_game extends AppCompatActivity implements SensorEventListener 
 
 
         }*/
-        boolean valide_rep=false;
+
         if (event.sensor.getType() == Sensor.TYPE_LIGHT) {
             light_numb = event.values[0];
 
@@ -576,4 +644,81 @@ public class Move_game extends AppCompatActivity implements SensorEventListener 
         mPlayer.start();
     }
 
+
+
+
+    //touch game
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event){
+        if (this.mDetector.onTouchEvent(event)) {
+            return true;
+        }
+        return super.onTouchEvent(event);
+    }
+
+    @Override
+    public boolean onSingleTapConfirmed(MotionEvent e) {
+        System.out.println("# onSimpleTap: ");
+        if(enigme_courante==2 && niveau_dans_lenigme==1)
+        {
+            niveau_dans_lenigme=2;
+            mProgressBar.setProgress(40);
+            playSound(R.raw.gameboy);
+            image.setImageResource(R.drawable.archdebd);
+
+        }
+        return true;
+    }
+
+    @Override
+    public boolean onDoubleTap(MotionEvent e) {
+        System.out.println("# onDoubleTap: ");
+        if(enigme_courante==2 && niveau_dans_lenigme==0)
+        {
+            niveau_dans_lenigme=1;
+            mProgressBar.setProgress(25);
+            playSound(R.raw.gameboy);
+            image.setImageResource(R.drawable.archdebd);
+            mProgressBar.setProgressTintList( ColorStateList.valueOf(Color.RED));
+        }
+
+        return true;
+    }
+
+    @Override
+    public boolean onDoubleTapEvent(MotionEvent e) {
+        System.out.println("# onDoubleTapEvent: ");
+        return false;
+    }
+
+    @Override
+    public boolean onDown(MotionEvent e) {
+        return false;
+    }
+
+    @Override
+    public void onShowPress(MotionEvent e) {
+
+    }
+
+    @Override
+    public boolean onSingleTapUp(MotionEvent e) {
+        return false;
+    }
+
+    @Override
+    public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {
+        return false;
+    }
+
+    @Override
+    public void onLongPress(MotionEvent e) {
+
+    }
+
+    @Override
+    public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
+        return false;
+    }
 }

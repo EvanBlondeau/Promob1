@@ -29,6 +29,7 @@ public class QRScreen extends AppCompatActivity {
     int progress=0;
     int reponse_pose=0;
     int nb_question_a_pose = 10;
+    int nb_question_en_tout =18;
 
     MediaPlayer mPlayer=null;
 
@@ -174,7 +175,7 @@ public class QRScreen extends AppCompatActivity {
                         //*range + 1
                         int i;
                         do {
-                            i = (int) ((Math.random() * nb_question_a_pose));
+                            i = (int) ((Math.random() * nb_question_en_tout));
 
                         } while (!quest_diff(list_num_quest, i));
                         response_valide = true;
