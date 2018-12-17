@@ -1,6 +1,8 @@
 package app_promod.application_promod;
 
 import android.content.Context;
+import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v4.view.GestureDetectorCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +10,8 @@ import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,6 +26,8 @@ public class Morpion extends AppCompatActivity implements
     private int tour = 0;
     private ArrayList<Character> symboles = new ArrayList();
     private boolean isEnded = false;
+
+    private MediaPlayer mPlayer = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -262,6 +268,8 @@ public class Morpion extends AppCompatActivity implements
             toast.show();
 
             isEnded=true;
+
+            displayResult(ch);
         }
         else if (!(CoinGS.getText()=="" || Haut.getText()=="" || CoinDS.getText()=="" || Gauche.getText()=="" || Centre.getText()=="" || Droite.getText()=="" || CoinGI.getText()=="" || Bas.getText()=="" || CoinDI.getText()=="")) {
             Context context = getApplicationContext();
@@ -274,6 +282,8 @@ public class Morpion extends AppCompatActivity implements
             toast.show();
 
             isEnded=true;
+
+            displayResult('-');
         }
 
     }
@@ -317,4 +327,46 @@ public class Morpion extends AppCompatActivity implements
         isWon();
         tour++;
     }
+
+    private void displayResult(char ch) {
+
+        setContentView(R.layout.activity_fin_qr);
+        TextView label = findViewById(R.id.textView7);
+        TextView text_score = findViewById(R.id.textView_score);
+        TextView text_score_com = findViewById(R.id.textView_com_score);
+        label.setText("");
+        text_score_com.setText("");
+
+        if (ch == '×') {
+            text_score.setText("Tu as gagné !");
+            playSound(R.raw.appla10);
+        } else if(ch == '-')
+        {
+            text_score.setText("Égalité");
+            playSound(R.raw.appl5);
+        }else
+        {
+            text_score.setText("Tu as perdu...");
+            playSound(R.raw.lose);
+        }
+
+        Button button_menu = findViewById(R.id.but_suivant);
+        button_menu.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(Morpion.this, MainActivity.class);
+                startActivity(intent);
+            }
+
+        });
+    }
+
+    private void playSound(int resId) {
+        if(mPlayer != null) {
+            mPlayer.stop();
+            mPlayer.release();
+        }
+        mPlayer = MediaPlayer.create(this, resId);
+        mPlayer.start();
+    }
+
 }
