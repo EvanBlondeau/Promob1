@@ -588,15 +588,15 @@ public class Move_game extends AppCompatActivity implements
         TextView text_score = findViewById(R.id.textView_score);
         TextView text_score_com = findViewById(R.id.textView_com_score);
         if (time > 25000) {
-            text_score_com.setText("tu es pas très doué");
+            text_score_com.setText("Tu n'es pas très doué");
             playSound(R.raw.lose);
         } else if(time<25000 && time >10000)
         {
-            text_score_com.setText("tu te débrouille bien ");
+            text_score_com.setText("Tu te débrouilles bien ");
             playSound(R.raw.appl5);
         }else if(time<10000)
         {
-            text_score_com.setText("tu est un monstre");
+            text_score_com.setText("Tu es un monstre");
             playSound(R.raw.appla10);
         }
 
