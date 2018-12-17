@@ -99,15 +99,6 @@ public class Morpion extends AppCompatActivity implements
         float X = event.getX();
         float Y = event.getY();
 
-        Context context = getApplicationContext();
-
-        CharSequence text = "OK";
-        int duration = Toast.LENGTH_SHORT;
-        Log.e("#","## OK");
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-
         // Recherche de tous les TextView
         TextView CoinGS = findViewById(R.id.CoinGS);
         TextView Haut = findViewById(R.id.Haut);
@@ -131,7 +122,7 @@ public class Morpion extends AppCompatActivity implements
                         CoinGS.setText(String.valueOf(ch));
                         isWon();
                         tour++;
-                        if (CoinGS.getText()=="" || Haut.getText()=="" || CoinDS.getText()=="" || Gauche.getText()=="" || Centre.getText()=="" || Droite.getText()=="" || CoinGI.getText()=="" || Bas.getText()=="" || CoinDI.getText()=="") {
+                        if (!isEnded && (CoinGS.getText()=="" || Haut.getText()=="" || CoinDS.getText()=="" || Gauche.getText()=="" || Centre.getText()=="" || Droite.getText()=="" || CoinGI.getText()=="" || Bas.getText()=="" || CoinDI.getText()=="")) {
                             IAcall();
                         }
                     }
@@ -142,7 +133,7 @@ public class Morpion extends AppCompatActivity implements
                         Haut.setText(String.valueOf(ch));
                         isWon();
                         tour++;
-                        if (CoinGS.getText()=="" || Haut.getText()=="" || CoinDS.getText()=="" || Gauche.getText()=="" || Centre.getText()=="" || Droite.getText()=="" || CoinGI.getText()=="" || Bas.getText()=="" || CoinDI.getText()=="") {
+                        if (!isEnded && (CoinGS.getText()=="" || Haut.getText()=="" || CoinDS.getText()=="" || Gauche.getText()=="" || Centre.getText()=="" || Droite.getText()=="" || CoinGI.getText()=="" || Bas.getText()=="" || CoinDI.getText()=="")) {
                             IAcall();
                         }
                     }
@@ -152,7 +143,7 @@ public class Morpion extends AppCompatActivity implements
                         CoinDS.setText(String.valueOf(ch));
                         isWon();
                         tour++;
-                        if (CoinGS.getText()=="" || Haut.getText()=="" || CoinDS.getText()=="" || Gauche.getText()=="" || Centre.getText()=="" || Droite.getText()=="" || CoinGI.getText()=="" || Bas.getText()=="" || CoinDI.getText()=="") {
+                        if (!isEnded && (CoinGS.getText()=="" || Haut.getText()=="" || CoinDS.getText()=="" || Gauche.getText()=="" || Centre.getText()=="" || Droite.getText()=="" || CoinGI.getText()=="" || Bas.getText()=="" || CoinDI.getText()=="")) {
                             IAcall();
                         }
                     }
@@ -164,7 +155,7 @@ public class Morpion extends AppCompatActivity implements
                         Gauche.setText(String.valueOf(ch));
                         isWon();
                         tour++;
-                        if (CoinGS.getText()=="" || Haut.getText()=="" || CoinDS.getText()=="" || Gauche.getText()=="" || Centre.getText()=="" || Droite.getText()=="" || CoinGI.getText()=="" || Bas.getText()=="" || CoinDI.getText()=="") {
+                        if (!isEnded && (CoinGS.getText()=="" || Haut.getText()=="" || CoinDS.getText()=="" || Gauche.getText()=="" || Centre.getText()=="" || Droite.getText()=="" || CoinGI.getText()=="" || Bas.getText()=="" || CoinDI.getText()=="")) {
                             IAcall();
                         }
                     }
@@ -174,7 +165,7 @@ public class Morpion extends AppCompatActivity implements
                         Centre.setText(String.valueOf(ch));
                         isWon();
                         tour++;
-                        if (CoinGS.getText()=="" || Haut.getText()=="" || CoinDS.getText()=="" || Gauche.getText()=="" || Centre.getText()=="" || Droite.getText()=="" || CoinGI.getText()=="" || Bas.getText()=="" || CoinDI.getText()=="") {
+                        if (!isEnded && (CoinGS.getText()=="" || Haut.getText()=="" || CoinDS.getText()=="" || Gauche.getText()=="" || Centre.getText()=="" || Droite.getText()=="" || CoinGI.getText()=="" || Bas.getText()=="" || CoinDI.getText()=="")) {
                             IAcall();
                         }
                     }
@@ -184,7 +175,7 @@ public class Morpion extends AppCompatActivity implements
                         Droite.setText(String.valueOf(ch));
                         isWon();
                         tour++;
-                        if (CoinGS.getText()=="" || Haut.getText()=="" || CoinDS.getText()=="" || Gauche.getText()=="" || Centre.getText()=="" || Droite.getText()=="" || CoinGI.getText()=="" || Bas.getText()=="" || CoinDI.getText()=="") {
+                        if (!isEnded && (CoinGS.getText()=="" || Haut.getText()=="" || CoinDS.getText()=="" || Gauche.getText()=="" || Centre.getText()=="" || Droite.getText()=="" || CoinGI.getText()=="" || Bas.getText()=="" || CoinDI.getText()=="")) {
                             IAcall();
                         }
                     }
@@ -196,7 +187,7 @@ public class Morpion extends AppCompatActivity implements
                         CoinGI.setText(String.valueOf(ch));
                         isWon();
                         tour++;
-                        if (CoinGS.getText()=="" || Haut.getText()=="" || CoinDS.getText()=="" || Gauche.getText()=="" || Centre.getText()=="" || Droite.getText()=="" || CoinGI.getText()=="" || Bas.getText()=="" || CoinDI.getText()=="") {
+                        if (!isEnded && (CoinGS.getText()=="" || Haut.getText()=="" || CoinDS.getText()=="" || Gauche.getText()=="" || Centre.getText()=="" || Droite.getText()=="" || CoinGI.getText()=="" || Bas.getText()=="" || CoinDI.getText()=="")) {
                             IAcall();
                         }
                     }
@@ -206,7 +197,7 @@ public class Morpion extends AppCompatActivity implements
                         Bas.setText(String.valueOf(ch));
                         isWon();
                         tour++;
-                        if (CoinGS.getText()=="" || Haut.getText()=="" || CoinDS.getText()=="" || Gauche.getText()=="" || Centre.getText()=="" || Droite.getText()=="" || CoinGI.getText()=="" || Bas.getText()=="" || CoinDI.getText()=="") {
+                        if (!isEnded && (CoinGS.getText()=="" || Haut.getText()=="" || CoinDS.getText()=="" || Gauche.getText()=="" || Centre.getText()=="" || Droite.getText()=="" || CoinGI.getText()=="" || Bas.getText()=="" || CoinDI.getText()=="")) {
                             IAcall();
                         }
                     }
@@ -216,7 +207,7 @@ public class Morpion extends AppCompatActivity implements
                         CoinDI.setText(String.valueOf(ch));
                         isWon();
                         tour++;
-                        if (CoinGS.getText()=="" || Haut.getText()=="" || CoinDS.getText()=="" || Gauche.getText()=="" || Centre.getText()=="" || Droite.getText()=="" || CoinGI.getText()=="" || Bas.getText()=="" || CoinDI.getText()=="") {
+                        if (!isEnded && (CoinGS.getText()=="" || Haut.getText()=="" || CoinDS.getText()=="" || Gauche.getText()=="" || Centre.getText()=="" || Droite.getText()=="" || CoinGI.getText()=="" || Bas.getText()=="" || CoinDI.getText()=="")) {
                             IAcall();
                         }
 
