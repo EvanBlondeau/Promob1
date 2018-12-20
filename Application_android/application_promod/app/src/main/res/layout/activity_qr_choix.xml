@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="top|center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Text_view_cx"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/but_cx1"
+            android:textAllCaps="true"
+            tools:layout_editor_absoluteY="141dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/but_cx2"
+            tools:layout_editor_absoluteY="312dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/but_cx3"
+            tools:layout_editor_absoluteY="226dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/but_cx4"
+            tools:layout_editor_absoluteY="64dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/but_cx5"
+            tools:layout_editor_absoluteY="386dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/but_cx6"
+            tools:layout_editor_absoluteY="386dp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

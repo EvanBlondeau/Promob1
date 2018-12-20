@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">RainboWolf</string>
+    <string name="button_text1">Mode solo</string>
+    <string name="button_text2">Mode multijoueur</string>
+    <string name="button_text3">Crédits</string>
+
+    <string name="Text_view_1">RainboWolf</string>
+
+    <string name="button_choix1">Quizz de l\'espace </string>
+    <string name="button_choix2">100 doors de l\'espace </string>
+    <string name="button_choix3">Morpion de l\'espace</string>
+    <string name="button_choix4">Morse de l\'espace</string>
+
+    <string name="Text_view_cx">Choisissez le thème des questions</string>
+    <string name="but_cx1">Aléatoire</string>
+    <string name="but_cx2">Sport</string>
+    <string name="but_cx3">Film</string>
+    <string name="but_cx4">Jeux vidéo</string>
+    <string name="but_cx5">Histoire</string>
+    <string name="but_cx6">Technologie</string>
+
+    <string name="Text_view_2">Question</string>
+    <string name="button1" >réponse A</string>
+    <string name="button2" >réponse B</string>
+    <string name="button3" >réponse C</string>
+    <string name="button4" >réponse D</string>
+    <string name="button_commencer_quest" >Cliquez pour commencer</string>
+    <string name="button_pro_quest" >Prochaine question</string>
+
+    <string name="button_init_move" >Initialisation du mouvement</string>
+    <string name="button_param" >paramètre capteur</string>
+
+    <string name="but_menu_prin" >Menu principal</string>
+    <string name="score" >Vous avez un score de</string>
+    <string name="com_score" >c\'est </string>
+    <string name="nombre" >nombre</string>
+
+
+    <string name="connect" >connexion a un hôte</string>
+    <string name="create" >crée un nouvel hôte</string>
+
+    <string name="tex_comp" >Sélectionnez votre mode de jeu galactique</string>
+    <string name="but_entr" >Entrainement</string>
+    <string name="but_comp" >Compétition</string>
+
+    <string name="Label">Le signal à récopier est : </string>
+
+    <string name="droit">\@ Tous droits réservés et encourt à des poursuites si non préservés, réalisé par Evan B et Tristan L</string>
+</resources>
